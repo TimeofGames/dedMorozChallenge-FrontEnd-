@@ -6,7 +6,7 @@ namespace Structure
     [Serializable]
     public class Graph
     {
-        public List<List<double>> matrix;
+        public List<int> way;
         public double firstShortestWay;
         public double secondShortestWay;
         
