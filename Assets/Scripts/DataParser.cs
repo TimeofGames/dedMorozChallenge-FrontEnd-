@@ -14,7 +14,7 @@ namespace Scripts
         private List<City> _cities = new List<City>();
 
         public List<City> Cities => _cities;
-        public Transform map;
+   
 
         void Start()
         {
@@ -28,7 +28,7 @@ namespace Scripts
                 lineAfterSplit[3] = lineAfterSplit[3].Replace('.', ',');
                 _cities = _cities.Append(new City(lineAfterSplit[0],lineAfterSplit[1],double.Parse(lineAfterSplit[2]),double.Parse(lineAfterSplit[3]),lineAfterSplit[4])).ToList();
             }
-            PointSetter.GPS(_cities, map);
+     
         }
     }
 }
